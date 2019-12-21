@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		h1{
+			color: blue;
+			text-align: center;
+		}
+		table{
+
+			background-color: rgb(237, 230, 97);
+		}
+		table tr td{
+			color: rgb(48, 142, 68);
+		}
+	</style>
+</head>
+<body>
+	<h1>Đăng Ký Du Lịch</h1>
+	<table border="1" cellspacing="0" cellpadding="4" align="center">
+		<tr>
+			<td>
+				<label for="name">Họ Và Tên</label>
+			</td>
+			<td>
+				<input type="text" id="fname">
+			</td>
+		</tr>
+		<tr>
+			<td><label for="adress">Địa Chỉ</label></td>
+			<td><input type="text" id="address"></td>
+		</tr>
+		<tr>
+			<td><label for="phoneNumber">Điện Thoại</label></td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><label for="passenger">Khách Việt Nam</label></td>
+			<td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td><label for="selectTour">Chọn Tour</label></td>
+			<td><select name="seclectTour" id="selectTour">
+				<optgroup label="Miền Bắc">
+					<option value="tour1">Hạ Long- Hà Nội- Sapa</option>
+					<option value="tour2">Hà Nội- Chùa Hương- Ninh Bình</option>
+					<option value="tour3">Hà Nội- Cát Bà- Tuần Châu</option>
+				</optgroup>
+				<optgroup label="Miền Trung">
+					<option value="tour4">Huế- Bạch Mã- Đà Nẵng</option>
+					<option value="tour5">Nha Trang- Đà Lạt</option>
+					<option value="tour6">Buôn Mê Thuật- Gia Lai-Kontum</option>
+				</optgroup>
+				<optgroup label="Miền Nam">
+					<option value="tour7">TP.HCM- Cần Thơ- Cà Mau</option>
+					<option value="tour8">TP.HCM- Mỹ Tho</option>
+				</optgroup>
+			</select></td>
+		</tr>
+		<tr>
+			<td class="tranffic">Phương Tiện</td>
+			<td><input type="radio">
+				<label for="traffic1">Máy Bay</label>
+				<input type="radio">
+				<label for="traffic2">Xe ô tô</label>
+			</td>
+				
+		</tr>x
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<legend>Số Lượng Đoàn Khách</legend>
+					<label for="gentelman">Người Lớn</label>
+					<input type="number">
+					<label for="child">Trẻ Em</label>
+					<input type="number">
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="">Ghi Chú Thêm</label></td>
+			<td><textarea id="content" name="content" rows="2" cols="20"></textarea></td>
+		</tr>
+		<tr align="center">
+			<td colspan="2"><button type="button" id="agreeButton">Đồng ý</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><p id="text"></p></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let agreeButton = document.getElementById('agreeButton');
+		agreeButton = addEventListener('click', function(){
+			let notice = document.getElementById('text');
+			notice.innerHTML='Bạn Đã Đăng Ký Thành Công'
+			notice.style.color = 'red';
+		});
+	</script>
+</body>
+</html>

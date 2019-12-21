@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bai11</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body h1{
+			font-size: 7;
+		}
+		body form table{
+			border-color: red;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center"><b>Đăng Nhập</b></h1>
+	<form action="sever/test.jsp" method="post" enctype="multipart/form-data">
+		<table border="1" cellpadding="6" cellspacing="0" align="center">
+			<tbody>
+				<tr>
+					<td><label for="abc" >Mã Người Dùng:</label></td>
+					<td><input size="" type="text" id="userName" class="abc"></td>
+				</tr>
+				<tr>
+					<td><label for="pass" >Mật Khẩu:</label></td>
+					<td><input type="password" id="passWord"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button type="button" id="btn">Đồng ý</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p id="err"></p></td>
+				</tr>
+			</tbody>	
+		</table>
+	</form>
+	<script type="text/javascript">
+		let newLogin = document.getElementById('btn');
+		newLogin.addEventListener('click', function(){
+			let login = document.getElementById('userName');
+			let a = login.value;
+			let notice = document.getElementById('err');
+			notice.innerHTML = a;
+		});
+	</script>
+</body>
+</html>

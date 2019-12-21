@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bài 12</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body h1{
+			color: green;
+		}
+		body table{
+			width: 50%;
+			background-color: rgb(63,255, 0);
+		}
+	</style>
+</head>
+<body >
+	<h1 align="center">Phiếu Tham Gia Chương Trình Khuyến Mãi</h1>
+	<form action="sever/test.jsp" method="post" enctype="multipart/form-data">
+		<table border="1" cellspacing="0" cellpadding="4" align="center">
+			<tbody>
+				<tr>
+					<td><label for="hvt">Họ Và Tên</td>
+					<td><input type="text" class="hvt" id="hvt"></td>
+				</tr>
+				<tr>
+					<td><label for="DC"> Địa Chỉ</label></td>
+					<td><input type="text" class="DC" id="DC"></td>
+				</tr>
+				<tr>
+					<td><label for="SDT">Số Điện Thoại</label></td>
+					<td><input type="text" id="SDT" class="SDT"></td>
+				</tr>
+				<tr>
+					<td><label for="Gender">Giới Tính</label></td>
+					<td>
+						<label for="Nam">Nam</label>
+						<input type="radio" name="Gender" id="Nam"checked="checked">
+						<label for="Nữ">Nữ</label>
+						<input type="radio" name="Gender" id="Nữ">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Job">Nghề Nghiệp</label></td>
+					<td>
+						<select class="Job" id="Job">
+							<option value="0">Giáo Viên</option>
+							<option value="1">Công An</option>
+							<option value="2">Bộ Đội</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>
+					<td><label for="SP">Chọn sản phẩm tham gia</label></td>
+					<td>
+						<!-- thuộc tính size trong thẻ select có tác dụng phân tách luôn lựa chọn -->
+						<select name="SP" id="SP" size="4">
+							<option value="0">Kem đánh răng</option>
+							<option value="1">Bột giặt</option>
+							<option value="2">Sữa tắm</option>
+							<option value="3">Dầu gội đầu</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Sndd">Số Người Dự Đoán</label></td>
+					<td><input type="text" id="Sndd" class="Sndd"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button type="button" class="btnSubmit">Đồng Ý</button></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</form>
+	<script type="text/javascript">
+		let 
+	</script>
+</body>
+</html>
